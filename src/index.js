@@ -4,12 +4,17 @@ import './index.css';
 import Container from './components/Container';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Container />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function doRender(){
+  ReactDOM.render(
+    <React.StrictMode>
+      <Container />
+    </React.StrictMode>,
+    document.getElementById('root')
+  );
+  setTimeout(doRender, 1000)
+}
+
+doRender();
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
