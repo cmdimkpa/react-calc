@@ -11,7 +11,7 @@ function doRender(){
     </React.StrictMode>,
     document.getElementById('root')
   );
-  setTimeout(doRender, 1000)
+  setTimeout(doRender, 500)
 }
 
 doRender();
